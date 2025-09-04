@@ -41,9 +41,7 @@ export const ParallaxScroll = ({
   index,
 }: {
   images: {
-    image: {
-      url: string;
-    };
+    image: { url: string | null | undefined };
     title: string;
     hours: number;
     rating: number;
@@ -52,7 +50,6 @@ export const ParallaxScroll = ({
   className?: string;
   index?: number;
 }) => {
-  const third = Math.ceil(images.length / 4);
 
   const col1 = images.slice(0, 5);
   const col2 = images.slice(5, 10);

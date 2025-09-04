@@ -34,6 +34,8 @@ export default function Home() {
     "/nature-2.avif",
     "/nature.jpeg",
   ];
+
+
   return (
     <div className=" flex flex-col h-[100vh] overflow-x-hidden sm:overflow-hidden bg-gray-50">
       <div className="w-full  border-b-[1px] mb-[48px]">
@@ -43,7 +45,7 @@ export default function Home() {
         {/* Background - ParallaxScroll component */}
         <div className="absolute h-[35rem] min-w-[1120px] max-w-[1120px] left-[20%] inset-0 z-0 rounded-xl overflow-hidden border border-transparent">
           <div>
-            <ParallaxScroll images={images} />
+            {/* <ParallaxScroll images={images} /> */}
           </div>
         </div>
 
