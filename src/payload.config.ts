@@ -16,12 +16,13 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
-  // admin: {
-  //   user: Users.slug,
-  //   importMap: {
-  //     baseDir: path.resolve(dirname),
-  //   },
-  // },
+  serverURL: process.env.PAYLOAD_PUBLIC_URL || 'https://cyprus-main.vercel.app/',
+  admin: {
+    user: Users.slug,
+    importMap: {
+      baseDir: path.resolve(dirname),
+    },
+  },
   collections: [Users, Media, Pages],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
