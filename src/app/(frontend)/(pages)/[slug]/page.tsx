@@ -59,7 +59,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 }));
                 console.log("items:", items);
                 { items != undefined && <ParallaxScroll key={index} images={items} /> };
-                return null;
+                return null
               }
               return null; // Handle other blocks here if added
             })}

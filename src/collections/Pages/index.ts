@@ -1,6 +1,6 @@
 // src/payload/collections/Pages.ts (or wherever your collection is defined)
 import { CollectionConfig } from 'payload';
-import ParallaxScrollBlock from '../app/(payload)/blocks/ParallaxScrollBlock'; // Adjust path if needed
+import ParallaxScrollBlock from '../../app/(payload)/blocks/ParallaxScrollBlock'; // Adjust path if needed
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
